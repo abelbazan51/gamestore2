@@ -62,10 +62,36 @@ footer {
 }
 .ps-3 {
   grid-area: ps-3;
+  padding: 5%;
 }
 .ps-4 {
   grid-area: ps-4;
 }
 .letras-grid {
   font-size: x-small;
+}
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  color: floralwhite;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.btn-neon:hover {
+  background: #340303;
+  box-shadow: 0 0 10px rgb(109, 13, 13);
+  transition-delay: 1s;
+}
+@media (max-width: 800px) {
+  .seccion-2 {
+    width: 100%;
+  }
+  .logo-foot {
+    width: 7%;
+    margin: 5%;
+  }
+}
+.button-compra {
+  text-align: center;
+  padding: 4%;
 }
