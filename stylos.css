@@ -93,5 +93,12 @@ footer {
 }
 .button-compra {
   text-align: center;
-  padding: 4%;
+  padding: 4% 4%;
+}
+.etiqueta {
+  text-decoration: none;
+  color: aliceblue;
+}
+.carousel-caption {
+  font-size: 60%;
 }
