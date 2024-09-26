@@ -59,6 +59,7 @@ footer {
 }
 .ps-5 {
   grid-area: ps-5;
+  justify-self: center;
 }
 .ps-3 {
   grid-area: ps-3;
@@ -82,6 +83,14 @@ footer {
   box-shadow: 0 0 10px rgb(109, 13, 13);
   transition-delay: 1s;
 }
+@media (min-width: 800px) {
+  .grid-article {
+    width: 92%;
+    max-width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
 @media (max-width: 800px) {
   .seccion-2 {
     width: 100%;
@@ -102,3 +111,131 @@ footer {
 .carousel-caption {
   font-size: 60%;
 }
+.grid-caract {
+  grid-area: caract;
+}
+.grid-video {
+  grid-area: video;
+}
+.grid-article {
+  grid-template-columns: auto;
+  grid-template-areas:
+    "caract video video "
+    "caract video video ";
+  display: grid;
+  width: 100%;
+}
+/*boton comprar*/
+
+.ov-btn-grow-skew-reverse {
+  background: #fff; /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #4741d7; /* tamaño y color de borde */
+  padding: 5% 9%;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-grow-skew-reverse:hover {
+  color: #fff; /* color de fuente hover */
+}
+.ov-btn-grow-skew-reverse::after {
+  content: "";
+  background: #4741d7; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-skew-reverse:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 1);
+}
+
+/*fin boton comprar*/
+
+/*boton neon*/
+.btn-neon {
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.btn-neon:hover {
+  background: #a945c7;
+  box-shadow: 0 0 80px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  transition-delay: 1s;
+}
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+.btn-neon:hover #span2 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(3600deg, transparent, #a945c7);
+}
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.boton-neon-precentacion {
+  display: flex;
+  justify-content: center;
+}
+.precentacion-letras {
+  align-content: center.;
+}
+/*fin boton*/
