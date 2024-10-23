@@ -35,6 +35,10 @@ footer {
 .intro-img {
   width: 100%;
 }
+.ofertas-1 {
+  display: flex;
+  justify-content: center;
+}
 .img-foot {
   display: flex;
   justify-content: end;
@@ -45,8 +49,19 @@ footer {
   font-size: medium;
   color: darkgray;
 }
+.section-porque {
+  padding: 7%;
+  background: #23201d;
+  border-radius: 20%;
+  margin: 10px 10px;
+}
 .contenido-intro {
   font-size: 100%;
+}
+@media (min-width: 361px) {
+  .seccion-2 {
+    display: block;
+  }
 }
 .seccion-2 {
   display: grid;
@@ -197,13 +212,14 @@ footer {
 #span3 {
   bottom: 0;
   right: -100%;
-  width: 100%;
-  height: 2px;
+  width: 88%;
+  height: 180%;
   background: linear-gradient(270deg, transparent, #a945c7);
+  background-image: url(./sonyplaystation_game_pillow_11856.png);
 }
 .btn-neon:hover #span3 {
   right: 100%;
-  transition: 1s;
+  transition: 4s;
   transition-delay: 0.5s;
 }
 #span2 {
@@ -236,6 +252,25 @@ footer {
   justify-content: center;
 }
 .precentacion-letras {
-  align-content: center.;
+  align-content: center;
 }
 /*fin boton*/
+.btn {
+  padding: 20px;
+  margin: 10px;
+}
+/*seccion por que elejirnos*/
+.titulo-porque {
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+.parrafo-porque {
+  color: antiquewhite;
+  font-family: cursive;
+}
+.logo-porque {
+  display: flex;
+  justify-content: center;
+}
