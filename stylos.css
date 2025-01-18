@@ -55,6 +55,20 @@ footer {
   border-radius: 20%;
   margin: 10px 10px;
 }
+.consola-color {
+  background-color: #232c2d;
+  margin: 1%;
+}
+@media (max-width: 1000px) {
+  .carousel-inner {
+    width: 65%;
+  }
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
 .contenido-intro {
   font-size: 100%;
 }
@@ -133,7 +147,7 @@ footer {
   grid-area: video;
 }
 .grid-article {
-  grid-template-columns: auto;
+  grid-template-columns: 35% 65%;
   grid-template-areas:
     "caract video video "
     "caract video video ";
@@ -273,4 +287,12 @@ footer {
 .logo-porque {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1200px) {
+  .section-porque {
+    font-size: xx-large;
+  }
+  .ofertas-1 {
+    font-size: xx-large;
+  }
 }
